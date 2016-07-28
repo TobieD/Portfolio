@@ -1,4 +1,4 @@
-# Title: Photos tag for Jekyll
+s# Title: Photos tag for Jekyll
 # Authors: Devin Weaver
 # Description: Allows photos tag to place photos as thumbnails and open in fancybox. Uses a CDN if needed.
 #
