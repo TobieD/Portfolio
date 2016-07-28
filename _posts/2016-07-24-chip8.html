@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Chip 8 Emulator"
+categories: tool
+header: "/assets/projects/chip8/chip8.jpg"
+excerpt: "Chip8 emulator made in C++ using OpenGL."
+source: "https://github.com/TobieD/Chip8Emulator"
+---
+<div class="post-content">
+
+     <p>The goal of this project was to create a program that can run Chip8 games. It was written in C++ and uses OpenGL for rendering and features heavy use of bitwise operations to interpret the opcodes. I started the project by implementing all the <a class="link" href="https://en.wikipedia.org/wiki/CHIP-8#Virtual_machine_description" target="_blank">technical requirmenents</a> like the stack, memory and the registers.</p> 
+        
+     <p>OpenGL is only used to render a quad that has a texture containing all the graphical information of the chip8 and the window this will be rendered in. I also made use of some OpenGL window callbacks to allow drag and drop of a game and handling the input.</p>
+        
+     <p>To actually make the chip8 run a game, the <a class="link" href="https://en.wikipedia.org/wiki/CHIP-8#Opcode_table" target="_blank">opcodes</a> needed to be implemented. For starting the first few opcodes I used the Maze game because it only has a small, but important ,amount of opcodes. Once the Maze game ran perfectly I moved on test actual games that require the input and sound opcodes and implemented the needed opcodes.</p>
+            
+</div>
+
+<div class="post-header">
+    <div class="post-title"><h2>Media</h2></div>        
+</div>  
+
+<div class="media-content">  
+    {% photo /assets/projects/chip8/invaders.jpg %}
+    {% photo /assets/projects/chip8/rush.jpg %}
+    {% photo /assets/projects/chip8/tetris.jpg %}
+    {% photo /assets/projects/chip8/maze.jpg %}
+</div>

@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /games
+---
+<h1 class="title"> Game Projects </h1>
+<div class="grid">
+	{% for post in site.posts %}
+		 {% if post.categories contains 'game' %}
+			{% include post_grid.html %}
+		 {% endif %}
+	{% endfor %}
+</div>

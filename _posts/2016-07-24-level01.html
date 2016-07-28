@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Biotech Facility"
+categories: other
+header: "/assets/projects/biotech/view_03.jpg"
+excerpt: "Deathmatch map made in Unreal Engine 4 using a modular workflow for asset creation."
+---
+
+<div class="post-content">
+
+   <p>My first introduction into Unreal Engine 4 and a modular workflow for creating 3D assets. The map was created using the shootergame project from the marketplace as a gameplay basis and build over a period of 3 months. </p>    
+        
+        <h2>Playing with blocks</h2>
+
+        <p>I started with blocking out some levels using the BSP tools of Unreal Engine 4, to have an idea how the map would play and if it was fun to play. I found that my first iterations were all very horizontal in design and played in a linear way, which isn`t something you want in a multiplayer map. After a couple of iterations I ended up with a map that had a mix of open floors, narrow paths and height variations.</p>
+        
+        <p>When I had my block out, I needed to come up with a setting the map would be in. I decided to go for a factory setting and loosely basing myself on concept art of Deus Ex: Human Revolution, once I decided the setting I wanted to create the modular textures, a floor texture, a wall texture and a trim texture. </p>
+        
+        <h2>The modular approach</h2>
+
+        <p>After this step I could finally start modeling basic assets, like walls, ceilings and doors, and use my trim texture to texture these. During this step I also discovered Material Functions in unreal which I used to create specific materials like iron or steel and blend these using masks in the actual material, I also made parameters to adjust the colors, roughness and dirt masks.</p>
+        
+        <p>Once most of the blockout was replaced I wanted to get the factory feel in my level and created some props to spread around. After the level was build it was time for some lightning, I made use of blueprints to handle this and placed some lamps around the level. </p>       
+            
+</div>
+
+<div class="post-header">
+    <div class="post-title"><h2>Media</h2></div>        
+</div>  
+
+<div class="media-content">  
+	{% video https://www.youtube.com/embed/3rnBdcsf70s %}
+    {% photo /assets/projects/biotech/view_01.jpg %}
+    {% photo /assets/projects/biotech/view_02.jpg %}
+    {% photo /assets/projects/biotech/view_03.jpg %}
+    {% photo /assets/projects/biotech/view_04.jpg %}
+</div>

@@ -1,23 +1,37 @@
 ---
 layout: default
 ---
+<h1 class="title">About</h1>
+<p class="about">I’m a C# and C++ developer with an interest in Game development and Tool development for games. I have experience working in Unity and Unreal Engine 4. I enjoy implementing game mechanics and systems but am also interested in developing frameworks.</p>
+<!-- <p class="about">Currently I’m looking for a starter position in a game company to further increase my knowledge.</p> -->
 
-<div class="home">
+<!-- <div class="grid">
+	<div class="grid-element">
+		<h1>Skills</h1>
+	</div>
 
-  <h1 class="page-heading">Posts</h1>
+	<div class="grid-element"></div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<div class="grid-element">
+		<h1>Software</h1>
+	</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+</div> -->
+<h1 class="title">Projects</h1>
+<div class="grid">
+	<a class ="grid-element" href="/games.html">
+		<img src= "/assets/projects/neon_rush/01.png">
+		<h3>Games</h3>
+		<p>Games I was a developer on. Some are done in a team and some are solo projects.</p>
+	</a>
+	<a class ="grid-element" href="/tools.html">
+		<img src= "/assets/projects/town_gen/header.png">
+		<h3>Tools</h3>
+		<p>Various tools I have created to speed up my workflow.</p>
+	</a>
+	<a class ="grid-element" href="/other.html">
+		<img src= "/assets/projects/fr_f2/header.jpg">
+		<h3>3D & Art</h3>
+		<p>A collection of 3D side projects I have spent time on.</p>
+	</a>
 </div>

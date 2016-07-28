@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /tools
+---
+
+<h1 class="title"> Tool Projects </h1>
+<div class="grid">
+	{% for post in site.posts %}
+		 {% if post.categories contains 'tool' %}
+			{% include post_grid.html %}
+		 {% endif %}
+	{% endfor %}
+</div>

@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Dungeon Architect"
+categories: tool
+header: "/assets/projects/editor_ue4/header.jpg"
+excerpt: "Unreal Engine 4 tools."
+---
+
+<div class="post-content">
+
+  <p>This was part of my Space Explorer project. But I decided it would be helpful for other projects so I wanted to create a more general script for it. I made this using some c++ functions but it mainly relies on the blueprint system of Unreal engine 4.</p>
+        
+        <p>It works in 2 parts, the first is a generator script that converts a texture into tiles based on the color of the pixel, the texture in the video below is only 16x16. With a C++ function I go over all the pixels of the texture and if it is a white texture I generate the specified actor. The second part is the Tile blueprint that uses a construction script to easily allow the spawning of walls. I only have to set the type of wall I want to spawn in a corner(North, South, East or West) and the wall will appear. </p>
+        
+        <p> In the videos below I show how I use this script to quickly create the tiles used for a dungeon and then use the tiles to create the walls for my dungeon.</p>   
+
+            
+</div>
+
+<div class="post-header">
+    <div class="post-title"><h2>Media</h2></div>        
+</div>  
+
+<div class="media-content">  
+	{% video https://www.youtube.com/embed/pOTkG3jKUoA %}
+	{% video https://www.youtube.com/embed/DQTcJWXprbU %}
+    {% photo /assets/projects/editor_ue4/view_1.jpg %}
+    {% photo /assets/projects/editor_ue4/view_2.jpg %}
+    {% photo /assets/projects/editor_ue4/view_3.jpg %}
+    {% photo /assets/projects/editor_ue4/view_4.jpg %}
+</div>

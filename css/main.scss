@@ -3,32 +3,42 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
+$h2-font-size:  $base-font-size * 1.5;
+$h1-font-size:  $base-font-size * 3;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #fafafa;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:       #1e1e1e;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$white-color: #dcdcdc;
+$white-color-light: lighten($white-color, 40%);
+$white-color-dark:  darken($white-color, 25%);
+
+$brand-color: #cba318;
+$brand-color-light: lighten($brand-color, 40%);
+$brand-color-dark:  darken($brand-color, 25%);
+
+$base-border: 1px solid rgba(10, 10, 10, 0.3);
+
 // Width of the content area
+$content-height:   500px;
 $content-width:    800px;
+$base-margin: 	   20%;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -48,6 +58,9 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
-        "syntax-highlighting"
+        "content",
+        "syntax-highlighting",
+        "header",
+        "footer",
+        "post"
 ;
