@@ -1,7 +1,7 @@
 <header>
 	<div class="img-cutoff">
 		 {% if page.path contains '_posts' %}
-		 	<img src={{page.header}}/>        	
+		 	<img src={{page.header | prepend: site.baseurl }}/>        	
 		 {% else %}
         	<img src="/assets/projects/town_gen/header.png"/>
 		 {% endif %}
