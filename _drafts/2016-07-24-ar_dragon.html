@@ -5,3 +5,40 @@ categories: game
 header: "/assets/projects/ar_dragon/ar_01.png"
 excerpt: "Augmented Reality application made with Vuforia in Unity 3D. Renders a scene onto a mark in the real world and has interaction from a user."
 ---
+
+<div class="post-content">
+    <h2>Procedural city generator in Unity</h2>
+        
+    <p>This project was my graduation work, The goal was to have a unity editor extension that creates a city, where the buildings in the city are customizable using prefabs. It also features a terrain generator. </p>
+
+    <h2>Voronoi Diagram</h2>
+
+    <p>A city is build up in multiple sectors and to generate these sectors I generate a Voronoi diagram, in simple terms this is plane divided into multiple cells based on a given amount of points on the plane. Because I wanted all the generation logic seperate from Unity I made use of a C# library. This allowed me to make a seperate application that I could use to visualize the generation in 2D for easier debugging. </p>
+
+    <h2>City Generator</h2>
+
+    <p>After the Voronoi diagram was created I moved on to using this data to generate a city. There were 2 things that needed to be generated, roads and buildings.
+    For roads I used the cells and kept dividing them up to generate inner roads, I made use of math to avoid having weird intersecting lines.
+    For buildings I used the roads to create buildings on the inner side of the road, this makes all the buildings spawned inside of the cell. The buildings are placed based on their bounds to avoid them intersecting with eachother.
+    </p>
+
+    <p>Finally to get a bit more interesting generations, I added a way to create additional trees and props inside of each cell.</p>
+
+    <h2>Terrain Generator</h2>
+
+    <p>I also made use of a terrain to create small height differences and make use of the optimizations that Unity does (billboarding, splatmaps, ...). The terrain is generated using perlin noise and is also fully tweakable.<p>
+</div>
+
+<div class="post-header">
+    <div class="post-title"><h2>Links</h2></div>        
+</div>  
+
+<div class="post-header">
+    <div class="post-title"><h2>Media</h2></div>        
+</div>  
+
+<div class="media-content">  
+    <iframe src="https://www.youtube.com/embed/9gTarAQTSyY" frameborder="0" allowfullscreen></iframe>
+    <img src = "/assets/projects/town_gen/african.png">
+    <img src = "/assets/projects/town_gen/cartoon.png">
+</div>
