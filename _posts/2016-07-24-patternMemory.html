@@ -8,13 +8,25 @@ excerpt: "Match the shown pattern as fast as possible!"
 
 <div class="post-content">
 
-       <p>This game is currently being worked on. It is a minimalistic game that requires the player to remember a pattern and recreate it in the correct order. The pattern is shown for a small time at the beginning of each round.</p>
+       <p>This game is currently in development. It is a minimalistic game that requires the player to remember a pattern and recreate it in the correct order within a set amount of time. The pattern is shown for a small time at the beginning of each round. When the player succefully completes patterns the difficulty will increase.</p> 
+
+       <p> This could be less time to solve the puzzle or different block that require a different approach</p>
 
        <h2>Technical Details</h2>
 
-       <p>The game is being developed in Unity. I wanted to have the art style as simple as possible by only making use of blocks and colors. It also makes heavy use of Coroutines to handle the animations and color transitions. To generate the pattern I simply use a data table of ints</p>
+       <p>The game is being developed in Unity. I wanted to have the art style as simple as possible by only making use of blocks and colors. It also makes heavy use of Coroutines to handle the animations and color transitions. </p>
 
-     
+       <p> To create the pattern I simply use a data table of integer values (currently 0-3), this system also allows me to easily add new types of blocks to the patterns.</p>
+
+	   	<p>
+			Each value is a different type of block:
+		   	<ul>
+		   		<li> 0: Not part of the pattern. </li>
+		   		<li> 1: Part of the pattern. </li>
+		   		<li> 2: Start of the pattern. </li>
+		   		<li> 3: End of the pattern. </li>
+		   	<ul>
+	   	</p>     
 </div>
 
 <div class="post-header">
@@ -22,5 +34,8 @@ excerpt: "Match the shown pattern as fast as possible!"
 </div>  
 
 <div class="media-content">
-   <iframe src='https://gfycat.com/ifr/PleasantPartialAmericanshorthair' frameborder='0' scrolling='no' width='640' height='360' allowfullscreen></iframe>
+    {% include gif.html src="https://gfycat.com/ifr/PleasantPartialAmericanshorthair" %} 
+    {% include photo.html src="/assets/projects/slide/pattern_01.png" %} 
+    {% include video.html src="https://www.youtube.com/embed/zL5kyreC6AQ" %}
 </div>
+

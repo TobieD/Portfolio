@@ -39,7 +39,8 @@ $post-font-size: 14px;
 	}	
 }
 
-.post-content{
+.post-content
+{
 
 	padding-top: 20px;
 	// border-bottom: $base-border;
@@ -76,6 +77,16 @@ $post-font-size: 14px;
 	a:hover
 	{
 		color: $grey-color-light;
+	}
+
+	img 
+	{
+		width: auto;
+		height: 200px;
+	}
+
+	code {
+		background:#F8F8FF; border:black dashed 1px; padding:6px;
 	}
 }
 
